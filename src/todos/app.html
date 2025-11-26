@@ -1,0 +1,42 @@
+<button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+  <img src="/src/assets/sun.svg" class="sun-icon" alt="Light mode" />
+  <img src="/src/assets/moon.svg" class="moon-icon" alt="Dark mode" />
+</button>
+
+<section class="todoapp">
+  <header class="header">
+    <h1>Tu lista de Tareas</h1>
+    <input id="new-todo-input" class="new-todo" placeholder="¿Qué necesita ser hecho?" autofocus />
+  </header>
+
+  <!-- This section should be hidden by default and shown when there are todos -->
+  <section class="main">
+    <input id="toggle-all" class="toggle-all" type="checkbox" />
+    <label for="toggle-all">Mark all as complete</label>
+    <ul class="todo-list"></ul>
+  </section>
+
+  <!-- This footer should hidden by default and shown when there are todos -->
+  <footer class="footer">
+    <!-- This should be "0 items left" by default -->
+    <span class="todo-count"><strong id="pending-count">0</strong> pendiente(s)</span>
+    <!-- Remove this if you don't implement routing -->
+    <ul class="filters">
+      <li>
+        <a class="filter" id="all">Todos</a>
+      </li>
+      <li>
+        <a class="filter" id="pending">Pendientes</a>
+      </li>
+      <li>
+        <a class="filter" id="completed">Completados</a>
+      </li>
+    </ul>
+    <!-- Hidden if no completed items are left ↓ -->
+    <button class="clear-completed">Borrar completados</button>
+  </footer>
+</section>
+
+<footer class="info">
+  <p>Creado por <a href="https://adrirf7.vercel.app/" target="_blank">adrirf7</a></p>
+</footer>
