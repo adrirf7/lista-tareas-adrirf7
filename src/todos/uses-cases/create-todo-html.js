@@ -8,12 +8,12 @@ export const createTodoHTML = (todo) => {
 
   // Formatear fecha
   const date = new Date(createdAdd);
-  const formattedDate = date.toLocaleDateString('es-ES', { 
-    day: '2-digit', 
-    month: 'short', 
-    year: 'numeric',
-    hour: '2-digit',
-    minute: '2-digit'
+  const formattedDate = date.toLocaleDateString("es-ES", {
+    day: "2-digit",
+    month: "short",
+    year: "numeric",
+    hour: "2-digit",
+    minute: "2-digit",
   });
 
   const html = `<div class="view">
